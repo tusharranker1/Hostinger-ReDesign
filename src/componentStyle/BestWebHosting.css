@@ -1,0 +1,124 @@
+:root {
+    --primary-color: rgb(226, 142, 17);
+}
+
+.BestWebHosting-wrapper {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.BestHosting-heading {
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    color: var(--primary-color);
+
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.BestHostingList {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: aqua; */
+}
+
+.BestHostingList li {
+    font-size: 1.1em;
+    list-style-type: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgba(255, 255, 255, 0.781);
+    margin-top: 10px;
+
+    text-align: left;
+}
+
+.BestHostingList li span {
+    font-weight: bold;
+    color: white;
+}
+
+.BestHosting-pricing {
+    height: 100px;
+    width: 200px;
+    margin: 5px auto;
+    /* background-color: aliceblue; */
+}
+
+.BestHosting-pricing img {
+    height: 100%;
+    width: 100%;
+}
+
+.BestHosting-purchaseBtn {
+
+    text-decoration: none;
+    display: inline-flex;
+    width: 180px;
+    height: 40px;
+    background-color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    font-size: 1.7em;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.BestHosting-purchaseBtn:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.checkFeatures {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    font-size: 1.2em;
+    color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    bottom: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:280px) {
+    .BestHosting-heading {
+        font-size: 2em;
+    }
+
+    .BestHostingList li {
+        font-size: 1em;
+    }
+
+    .BestHosting-pricing {
+        height: 80px;
+
+    }
+
+
+}
+
+@media screen and (min-width:281px) and (max-width:415px) {
+    .BestHosting-heading {
+        font-size: 2em;
+    }
+
+    .BestHostingList li {
+        font-size: 1em;
+    }
+
+    .BestHosting-pricing {
+        height: 80px;
+
+    }
+}

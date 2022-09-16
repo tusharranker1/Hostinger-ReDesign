@@ -1,0 +1,101 @@
+:root {
+    --primary-color2: rgb(247, 148, 0);
+}
+
+.navResponsive-wrapper {
+    position: relative;
+    height: 80px;
+    width: 100%;
+}
+
+.navigation-wrapper {
+    /* height: 100vh; */
+    width: 100vw;
+    background-color: black;
+}
+
+.link-wrappers {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.linksDivision {
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+
+}
+
+.linksDivision h1 {
+    margin: 20px auto;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--primary-color2);
+}
+
+.linksDivision img {
+    height: 90px;
+    width: 90%;
+    margin: 5px;
+    transition: padding 0.3s;
+
+}
+
+.linksDivision img:hover {
+    padding: 10px;
+}
+
+.cartAndLogin-wrapper {
+    width: 100%;
+    height: 200px;
+    background: black;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.lineBetween {
+    width: 2px;
+    height: 50px;
+    background-color: white;
+}
+
+.CartPageLink {
+    display: inline-flex;
+    font-size: 2em;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--primary-color2);
+    margin: 10px;
+}
+
+.loginBtn {
+    display: inline-flex;
+    height: 50px;
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 1.3em;
+    letter-spacing: 3px;
+    background-color: var(--primary-color2);
+}
+
+@media screen and (max-width:600px) {
+    .lineBetween {
+        display: none;
+    }
+}

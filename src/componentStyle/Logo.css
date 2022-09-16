@@ -1,0 +1,66 @@
+:root {
+    --primary-color: rgb(226, 142, 17);
+}
+
+.logo-main {
+    margin-left: 20px;
+    margin-right: 0px;
+    height: 60px;
+    width: 60px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2em;
+}
+
+.logo-main::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+
+    animation-name: ring-rotate;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    z-index: 2;
+}
+
+@keyframes ring-rotate {
+    100% {
+        transform: rotateX(360deg);
+    }
+}
+
+.logo-main::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    animation-name: ring-rotate-after;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    z-index: 2;
+}
+
+@keyframes ring-rotate-after {
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+@media screen and (max-width:415px) {
+    .logo-main {
+        height: 50px;
+        width: 50px;
+    }
+}
